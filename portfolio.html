@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Profile Page of Megha, web deveploer">
+    <meta name="author" content="Your Name">
+    <title>Profile Page</title>
+
+    <style>
+        /* Background Image */
+        body {
+            background-image: url("image.jpg"); 
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif; /* Updated font-family */
+            margin: 0;
+            padding: 0;
+            
+        }
+        *{
+            scroll-behavior: smooth;
+        }
+
+        
+        h2 {
+            color: black;
+            text-align: center;
+            margin-top: 20px;
+            padding: 0;
+        }
+        h1{
+            color:white;
+            text-align:center;
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+        
+
+        
+        nav {
+            position: absolute;
+            top: 0;
+            right: 0; 
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li a:hover {
+            background-color: rgba(0, 123, 255, 0.8);
+        }
+
+    
+        .profile-section {
+            text-align: center;
+            margin-top: 150px; 
+        }
+
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white; 
+        }
+
+        .profile-section h2 {
+            color: white;
+            font-size: 24px;
+        }
+
+        .profile-section p {
+            color: white;
+            font-size: 18px;
+        }
+
+        .explore-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1cd4ec;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .profile-section img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .explore-button {
+                width: 100%;
+                font-size: 18px;
+            }
+
+            ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            ul li a {
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+        
+        
+          #project-list{
+
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(53, 129, 228); 
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        
+        #projectcard{
+
+            background-color: rgb(119, 212, 240);
+            margin: 20px;
+            height: 300px;
+            width: 300px;
+            text-align:center;
+            justify-content: center;
+            border-radius: 3%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#Service">Service</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome to My Profile</h1>
+
+    <section class="profile-section">
+        <img src="g.png" alt="Profile Image of Megha"> <!-- Added alt text for better accessibility -->
+        <h2>Megha</h2>
+        <p><b>WEB DEVEPLOER</p></b></p>
+        <div id="buttons">
+        <button class="explore-button"><a id="btnlinl"href="#projectlists">Explore</a></button>
+        <button class="explore-button"><a id="btnlink"href="#projectcard">Download</a></button>
+    </section>
+
+
+<section class="project">
+    <h1>PROJECTS</h1>
+
+    <div id="project-list">
+        <div id="projectcard">
+    <h2>Skills</h2>
+    <p>CSS<br><br> Artifical intelligence <br><br> communication Skills</p>
+ </div>  
+
+ <div id="projectcard">
+    <h2>Hobbies</h2>
+    <p>Singing<br><br> Dancing<br><br>Journaling</p>
+ </div>  
+
+ <div id="projectcard">
+    <h2>Projects</h2>
+    <p>Portfolio</p>
+ </div>  
+</div>
+</section>
+<section>
+    <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br> <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br> <br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="1" required></textarea><br> <br>
+
+           <button type="submit">Submit</button>
+        </form>
+</section>
+</body>
+</html>
